@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GridWebsite</title>
+  </head>
+  <body>
+    <nav>
+      <!-- aside bar -->
+      <ul class="sidebar">
+        <li>
+          <a id="close" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+              <!--  -->
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <!--  -->
+      <ul>
+        <li><a href="#">myweb2store</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li>
+          <a id="menubar" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+              <!--  -->
+            </svg></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header>
+      <h1>Dreamers</h1>
+    </header>
+    <main class="grid-container">
+      <article class="featured">
+        <img src="./images/1.png" alt="balloons" />
+        <div>
+          <h2>Ballon Magic</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            ipsam molestias, cum repellat aliquam tenetur officia, esse in, at
+            quod nostrum. Dolorem debitis vero expedita.
+          </p>
+        </div>
+      </article>
+      <article>
+        <img src="./images/1.png" alt="balloon2" />
+        <div>
+          <h3>Dreamers in Air</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            architecto, voluptas magni sapiente impedit expedita laborum
+            inventore qui cum quis ducimus nesciunt assumenda exercitationem.
+          </p>
+        </div>
+      </article>
+      <article>
+        <img src="./images/2.png" alt="balloon2" />
+        <div>
+          <h3>Dream Road</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            architecto, voluptas magni sapiente impedit expedita laborum
+            inventore qui cum quis ducimus nesciunt assumenda exercitationem.
+          </p>
+        </div>
+      </article>
+      <article>
+        <img src="./images/3.png" alt="balloon2" />
+        <div>
+          <h3>Paradise Live</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            architecto, voluptas magni sapiente impedit expedita laborum
+            inventore qui cum quis ducimus nesciunt assumenda exercitationem.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <!-- script -->
+    <script>
+      let menubar = document.querySelector("#menubar");
+      menubar.addEventListener("click", () => {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      });
+
+      let closeBtn = document.querySelector("#close");
+      closeBtn.addEventListener("click", () => {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
